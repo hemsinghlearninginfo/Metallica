@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink, HashRouter } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Icons from '../Icon/index';
+import Icons from '../icon';
 
 export default class NavigationBar extends Component {
 

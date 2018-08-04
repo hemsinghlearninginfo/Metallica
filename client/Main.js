@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink, HashRouter } from "react-router-dom";
-import CustomRouting from './components/Route/index';
-import AllPages from './components/Route/ImportAllPages';
+import CustomRouting from './components/route/index';
+import AllPages from './components/route/importAllPages';
 
 class Main extends Component {
   render() {

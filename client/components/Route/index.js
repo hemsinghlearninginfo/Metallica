@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, HashRouter } from "react-router-dom";
-import AllPages from './ImportAllPages'
+import AllPages from './importAllPages'
 
 
 const CustomRouting = () => {

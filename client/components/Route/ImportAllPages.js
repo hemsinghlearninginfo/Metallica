@@ -1,11 +1,11 @@
 
-import Header from '../Header/index';
-import Footer from '../Footer/index';
-import Home from '../Home';
-import FAQs from "../FAQs";
-import Contact from "../Contact";
-import Carousel from "../Controls/Carousel";
-import PageHeader from "../Controls/PageHeading";
+import Header from '../header';
+import Footer from '../footer';
+import Home from '../home';
+import FAQs from "../faqs";
+import Contact from "../contact";
+import Carousel from "../controls/carousel";
+import PageHeader from "../controls/pageHeading";
 
 export default class AllPages {
     static Header = Header;

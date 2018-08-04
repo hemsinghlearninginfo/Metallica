@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import AllPages from './Route/ImportAllPages';
+import AllPages from './route/importAllPages';
  
 class Home extends Component {
   render() {
