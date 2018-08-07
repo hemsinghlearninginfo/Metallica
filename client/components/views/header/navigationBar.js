@@ -45,10 +45,10 @@ export default class NavigationBar extends Component {
                     </ul>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/faqs"><FontAwesomeIcon icon="user-plus" /> Sign Up</NavLink>
+                            <NavLink className="nav-link" to="/register"><FontAwesomeIcon icon="user-plus" /> Sign Up</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" to="/faqs"><FontAwesomeIcon icon="sign-in-alt" /> Login</NavLink>
+                            <NavLink className="nav-link" to="/login"><FontAwesomeIcon icon="sign-in-alt" /> Login</NavLink>
                         </li>
                     </ul>
                 </div>

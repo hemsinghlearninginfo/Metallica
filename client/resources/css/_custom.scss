@@ -177,11 +177,15 @@ a:hover {
 }
 
 span.help-block {
-    color: #c8c9ca;
-    font-size: 14px;
+    color: #9e9e9e;
+    font-size: 9pt;
     font-style: italic;
 }
 
 .marginLeft10 {
     margin-left: 10px;
+}
+
+.form-control[type=checkbox]{
+padding: 100px;
 }
