@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink, HashRouter } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Icons from '../icon';
+import Icons from '../../controls/icon';
 
 export default class NavigationBar extends Component {
 
@@ -14,7 +14,6 @@ export default class NavigationBar extends Component {
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
 
                 <NavLink className="navbar-brand" to="/"><FontAwesomeIcon icon="align-left" /> Metallica</NavLink>
-
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -25,6 +24,9 @@ export default class NavigationBar extends Component {
                         </li> */}
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/faqs">FAQs</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/postOrders">Post My Order</NavLink>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,6 +41,14 @@ export default class NavigationBar extends Component {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/faqs"><FontAwesomeIcon icon="user-plus" /> Sign Up</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/faqs"><FontAwesomeIcon icon="sign-in-alt" /> Login</NavLink>
                         </li>
                     </ul>
                 </div>

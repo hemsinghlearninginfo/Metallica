@@ -1,10 +1,10 @@
 const autoprefixer = require('autoprefixer/lib/autoprefixer');
-const webpack = require('C:/Users/hsin20/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/webpack');
+const webpack = require('webpack');
 const path = require('path');
 const precss = require('precss');
 
 const TransferWebpackPlugin = require('transfer-webpack-plugin');
-const ExtractTextPlugin = require('C:/Users/hsin20/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   devtool: 'eval',

@@ -5,7 +5,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <AllPages.PageHeader name="Home" />
+        <AllPages.PageHeader name="Home" description="test desc" />
       </div>
     );
   }

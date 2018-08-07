@@ -9,7 +9,8 @@ const CustomRouting = () => {
             <div>
                 <Route exact path="/" component={AllPages.Home} />
                 <Route path="/faqs" component={AllPages.FAQs} />
-                <Route path="/contact" component={AllPages.Contact} />
+                <Route path="/postOrders" component={AllPages.PostOrders} />
+                <Route path="/addEditOrder" component={AllPages.AddEditOrder} />
             </div>
         </HashRouter>
     );
