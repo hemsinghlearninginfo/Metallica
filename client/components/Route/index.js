@@ -16,6 +16,7 @@ const CustomRouting = () => {
                 <Route path="/profile" component={AllPages.UserProfile} />
                 <Route path="/register" component={AllPages.UserRegister} />
                 <Route path="/settings" component={AllPages.UserSettings} />
+                <Route path="/termsofuser" component={AllPages.TermsOfUser} />
             </div>
         </HashRouter>
     );

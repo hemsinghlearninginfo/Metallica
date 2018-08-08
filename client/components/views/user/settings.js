@@ -15,6 +15,7 @@ class Settings extends Component {
     render() {
         return (
             <div>
+                <AllPages.PageHeader name="User settings" />
                 <div className="pageContent" id="frmSettings">
                 </div>
             </div>

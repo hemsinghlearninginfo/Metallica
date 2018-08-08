@@ -46,7 +46,7 @@ class AddEditOrder extends Component {
                 <div className="pageContent" id="frmOrder">
                     <form>
                         <div className="row">
-                            <div className="col col-6">
+                            <div className="col-sm-4 col-md-6 col-lg-6">
                                 <FieldGroup
                                     id="companyName"
                                     type="text"
@@ -56,7 +56,7 @@ class AddEditOrder extends Component {
                                     help="type company name or script"
                                 />
                             </div>
-                            <div className="col col-6">
+                            <div className="col-sm-4 col-md-6 col-lg-6">
                                 <FieldGroup
                                     id="script"
                                     type="label"

@@ -17,15 +17,18 @@ class Login extends Component {
         };
     }
 
-
-
     render() {
         return (
             <div>
                 <div className="pageContent" id="frmLogin">
                     <form>
                         <div className="row justify-content-md-center">
-                            <div className="col col-8">
+                            <div className="col col-6">
+                                <h4>Login</h4>
+                            </div>
+                        </div>
+                        <div className="row justify-content-md-center">
+                            <div className="col col-6">
                                 <FieldGroup
                                     id="username"
                                     type="email"
@@ -35,7 +38,9 @@ class Login extends Component {
                                     help="type your registered email address"
                                 />
                             </div>
-                            <div className="col col-8">
+                        </div>
+                        <div className="row justify-content-md-center">
+                            <div className="col col-6">
                                 <FieldGroup
                                     id="password"
                                     type="password"
@@ -45,18 +50,27 @@ class Login extends Component {
                                     help="type your registered password associated with email address"
                                 />
                             </div>
-                            <div className="col col-8">
+                        </div>
+                        <div className="row justify-content-md-center">
+                            <div className="col col-6">
                                 <FormGroup>
                                     <Checkbox> Remember me</Checkbox>
                                 </FormGroup>
                             </div>
-                            <div className="col col-8 ">
+                        </div>
+                        <div className="row justify-content-md-center">
+                            <div className="col col-6">
                                 <div className="row">
-                                    <div className="col-sm-4 col-md-2 col-lg-2">
+                                    <div className="col-sm-4 col-md-4 col-lg-4">
                                         <button className="btn btn-sm btn-primary" type="submit"><FontAwesomeIcon icon="sign-in-alt" /> Submit</button>
                                     </div>
-                                    <div className="col-sm-8 col-md-10 col-lg-10">
+                                    <div className="col-sm-8 col-md-8 col-lg-8">
                                         <NavLink className="link" to="/forgotpassword"> Forgot password?</NavLink>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-sm-8 col-md-10 col-lg-10">
+                                        Not Register <NavLink className="link" to="/register">Create an account</NavLink>
                                     </div>
                                 </div>
                             </div>

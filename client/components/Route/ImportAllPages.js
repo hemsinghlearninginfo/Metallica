@@ -13,6 +13,7 @@ import UserForgotPassword from "../views/user/forgotPassword";
 import UserProfile from "../views/user/profile";
 import UserRegister from "../views/user/register";
 import UserSettings from "../views/user/settings";
+import TermsOfUser from "../views/mix/termsofuser";
 
 
 export default class AllPages {
@@ -30,4 +31,5 @@ export default class AllPages {
     static UserProfile = UserProfile;
     static UserRegister = UserRegister;
     static UserSettings = UserSettings;
+    static TermsOfUser = TermsOfUser;
 }
