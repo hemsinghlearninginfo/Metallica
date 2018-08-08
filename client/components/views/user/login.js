@@ -20,15 +20,11 @@ class Login extends Component {
     render() {
         return (
             <div>
-                <div className="pageContent" id="frmLogin">
-                    <form>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-6">
-                                <h4>Login</h4>
-                            </div>
-                        </div>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-6">
+                <div className="pageContent frmUser frmUserWidth-Login container h-100">
+                    <div className="row h-100 justify-content-center align-items-center">
+                        <form className="col-12">
+                            <AllPages.UserScreenHeading name="Login" />
+                            <div className="form-group">
                                 <FieldGroup
                                     id="username"
                                     type="email"
@@ -36,11 +32,10 @@ class Login extends Component {
                                     required
                                     placeholder="Enter your email Id"
                                     help="type your registered email address"
+                                    className="form-control"
                                 />
                             </div>
-                        </div>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-6">
+                            <div className="form-group">
                                 <FieldGroup
                                     id="password"
                                     type="password"
@@ -50,16 +45,12 @@ class Login extends Component {
                                     help="type your registered password associated with email address"
                                 />
                             </div>
-                        </div>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-6">
+                            <div className="form-group">
                                 <FormGroup>
                                     <Checkbox> Remember me</Checkbox>
                                 </FormGroup>
                             </div>
-                        </div>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-6">
+                            <div className="form-group">
                                 <div className="row">
                                     <div className="col-sm-4 col-md-4 col-lg-4">
                                         <button className="btn btn-sm btn-primary" type="submit"><FontAwesomeIcon icon="sign-in-alt" /> Submit</button>
@@ -74,8 +65,12 @@ class Login extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </form>
+                            {/* <div className="form-group">
+                                <label for="formGroupExampleInput2">Another label</label>
+                                <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Another input" />
+                            </div> */}
+                        </form>
+                    </div>
                 </div>
             </div>
         );
@@ -85,3 +80,4 @@ class Login extends Component {
 
 
 export default Login;
+

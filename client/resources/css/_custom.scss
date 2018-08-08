@@ -28,7 +28,7 @@ a:hover {
     color: rgb(17, 212, 238) !important;
 }
 
-:required{
+:required {
     border-left-color: red;
     border-left-width: 3px;
     border-left-style: outset;
@@ -170,10 +170,15 @@ a:hover {
     padding-left: 3px;
 }
 
-#frmOrder,
-#frmOrder>div > input.form-control {
-    font-size: 10pt !important;
-    height: calc(1.75rem + 2px) !important;
+.control-label {
+    font-size: 10pt;
+}
+
+input,
+select,
+file {
+    height: calc(2rem + 2px) !important;
+    font-size: 10pt;
 }
 
 span.help-block {
@@ -186,6 +191,39 @@ span.help-block {
     margin-left: 10px;
 }
 
-.form-control[type=checkbox]{
-padding: 100px;
+.form-control[type=checkbox] {
+    padding: 100px;
+}
+
+.frmUser {
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: #36363814;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.frmUserHeadings {
+    background-color: #f1efef;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    border-radius: 5px
+}
+
+.frmUserHeadings>H4 {
+    text-shadow: 1px 1px 0px #b5bbbb;
+}
+
+/* For mobile phones: */
+
+[class*="frmUserWidth-"] {
+    width: 95%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .frmUserWidth-Login {
+        width: 40%;
+    }
 }

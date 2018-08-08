@@ -8,6 +8,8 @@ import AddEditOrder from '../views/orders/addEditOrder';
 import Contact from "../contact";
 import Carousel from "../controls/carousel";
 import PageHeader from "../controls/pageHeading";
+import UserScreenHeading from "../controls/userScreenHeading";
+
 import UserLogin from "../views/user/login";
 import UserForgotPassword from "../views/user/forgotPassword";
 import UserProfile from "../views/user/profile";
@@ -32,4 +34,5 @@ export default class AllPages {
     static UserRegister = UserRegister;
     static UserSettings = UserSettings;
     static TermsOfUser = TermsOfUser;
+    static UserScreenHeading =  UserScreenHeading;
 }

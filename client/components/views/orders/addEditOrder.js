@@ -13,18 +13,18 @@ class AddEditOrder extends Component {
         this.state = {
             companyName: '',
             script: '',
-            mode:'',
-            side:'',
-            entry:'',
-            sl:'',
-            size:'',
-            riskPoint:'',
-            capitalRisk:'',
-            file1:'',
-            file2:'',
-            exitPrice:'',
-            exitPoint:'',
-            exitPL:''
+            mode: '',
+            side: '',
+            entry: '',
+            sl: '',
+            size: '',
+            riskPoint: '',
+            capitalRisk: '',
+            file1: '',
+            file2: '',
+            exitPrice: '',
+            exitPoint: '',
+            exitPL: ''
         };
     }
 
