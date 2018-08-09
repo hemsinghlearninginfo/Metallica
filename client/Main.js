@@ -9,12 +9,8 @@ class Main extends Component {
       <div>
         <HashRouter>
           <div>
-
             <AllPages.Header />
             <div className="content mainContainer">
-              {/* <ul className="header">
-                <li><NavLink to="/contact">Contact</NavLink></li>
-              </ul> */}
               <CustomRouting />
             </div>
             <AllPages.Footer />

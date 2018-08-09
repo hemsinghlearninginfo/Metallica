@@ -1,7 +1,6 @@
 
 import Header from '../views/header';
 import Footer from '../views/footer';
-import Home from '../home';
 import FAQs from "../faqs";
 import PostOrders from '../views/orders/postOrders';
 import AddEditOrder from '../views/orders/addEditOrder';
@@ -10,6 +9,7 @@ import Carousel from "../controls/carousel";
 import PageHeader from "../controls/pageHeading";
 import UserScreenHeading from "../controls/userScreenHeading";
 
+import Home from "../views/home";
 import UserLogin from "../views/user/login";
 import UserForgotPassword from "../views/user/forgotPassword";
 import UserProfile from "../views/user/profile";

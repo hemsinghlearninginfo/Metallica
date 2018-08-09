@@ -19,9 +19,6 @@ export default class NavigationBar extends Component {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
-                        {/* <li className="nav-item active">
-                            <a className="nav-link active" href="#">Home</a>
-                        </li> */}
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/postOrders">Post My Order</NavLink>
                         </li>

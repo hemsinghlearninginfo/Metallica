@@ -9,11 +9,14 @@ const express = require('express'),
   webpackMiddleware = require('webpack-dev-middleware'),
   webpackConfig = require('../webpack.config');
 
-const SeedDB = require("./seedDb").default;
+const SeedDB = require("./seedDb");
   
 const app = express();
 const router = express.Router();
 const PORT = process.env.PORT || 3000;
+
+// Putting Some Pre-requisted Data.
+SeedDB();
 
 app.use(webpackMiddleware(webpack(webpackConfig), {
   hot: true,
