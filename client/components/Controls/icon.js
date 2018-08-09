@@ -7,7 +7,8 @@ import {
     faEdit, 
     faPlusSquare, 
     faTrashAlt,
-    faEnvelopeSquare
+    faEnvelopeSquare,
+    faExclamationTriangle
  } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -19,5 +20,6 @@ library.add(fab,
     faEdit, 
     faPlusSquare, 
     faTrashAlt,
-    faEnvelopeSquare
+    faEnvelopeSquare,
+    faExclamationTriangle
 );

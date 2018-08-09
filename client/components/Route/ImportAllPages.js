@@ -7,6 +7,7 @@ import AddEditOrder from '../views/orders/addEditOrder';
 import Contact from "../contact";
 import PageHeader from "../controls/pageHeading";
 import UserScreenHeading from "../controls/userScreenHeading";
+
 import HomeCard from "../controls/homeCard";
 import StrategyDetail from '../views/strategy/detail';
 
@@ -17,6 +18,8 @@ import UserProfile from "../views/user/profile";
 import UserRegister from "../views/user/register";
 import UserSettings from "../views/user/settings";
 import TermsOfUser from "../views/mix/termsofuser";
+
+import Error404 from '../views/error/404';
 
 
 export default class AllPages {
@@ -37,4 +40,5 @@ export default class AllPages {
     static UserScreenHeading =  UserScreenHeading;
     static HomeCard = HomeCard;
     static StrategyDetail = StrategyDetail;
+    static Error404 = Error404;
 }
