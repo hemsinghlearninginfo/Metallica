@@ -5,10 +5,10 @@ import FAQs from "../faqs";
 import PostOrders from '../views/orders/postOrders';
 import AddEditOrder from '../views/orders/addEditOrder';
 import Contact from "../contact";
-import Carousel from "../controls/carousel";
 import PageHeader from "../controls/pageHeading";
 import UserScreenHeading from "../controls/userScreenHeading";
 import HomeCard from "../controls/homeCard";
+import StrategyDetail from '../views/strategy/detail';
 
 import Home from "../views/home";
 import UserLogin from "../views/user/login";
@@ -25,7 +25,6 @@ export default class AllPages {
     static FAQs = FAQs;
     static Contact = Contact;
     static Footer = Footer;
-    static Carousel = Carousel;
     static PageHeader = PageHeader;
     static PostOrders = PostOrders;
     static AddEditOrder = AddEditOrder;
@@ -37,4 +36,5 @@ export default class AllPages {
     static TermsOfUser = TermsOfUser;
     static UserScreenHeading =  UserScreenHeading;
     static HomeCard = HomeCard;
+    static StrategyDetail = StrategyDetail;
 }
