@@ -8,6 +8,7 @@ import Contact from "../contact";
 import Carousel from "../controls/carousel";
 import PageHeader from "../controls/pageHeading";
 import UserScreenHeading from "../controls/userScreenHeading";
+import HomeCard from "../controls/homeCard";
 
 import Home from "../views/home";
 import UserLogin from "../views/user/login";
@@ -35,4 +36,5 @@ export default class AllPages {
     static UserSettings = UserSettings;
     static TermsOfUser = TermsOfUser;
     static UserScreenHeading =  UserScreenHeading;
+    static HomeCard = HomeCard;
 }

@@ -16,6 +16,22 @@ body {
     background: white;
 }
 
+.homeTab{
+    padding: 22px;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #dee2e6;
+}
+
+.homeTabText{
+    font-size: 9pt;
+    color: black;
+}
+
+.card:hover{
+    border-color: #b7b7b7;
+}
+
 nav {
     box-shadow: -1px -5px 8px 5px #8c8b8b;
 }

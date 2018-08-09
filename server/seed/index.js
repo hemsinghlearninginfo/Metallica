@@ -1,4 +1,5 @@
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
+const strategy = require("./strategy");
 
 function seedDB() {
     // Remove all users

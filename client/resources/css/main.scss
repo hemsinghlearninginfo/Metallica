@@ -15,3 +15,6 @@ $background-color: rgb(44, 59, 66);
   border-radius: 10px;
 }
 
+.fade:not(.show){
+  opacity:1;
+}
