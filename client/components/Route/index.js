@@ -18,7 +18,7 @@ const CustomRouting = () => {
                     <Route path="/register" component={AllPages.UserRegister} />
                     <Route path="/settings" component={AllPages.UserSettings} />
                     <Route path="/termsofuser" component={AllPages.TermsOfUser} />
-                    <Route path="/strategydetail" component={AllPages.StrategyDetail} />
+                    <Route path="/strategydetail/:strategy" component={AllPages.StrategyDetail} />
                     <Route component={AllPages.Error404} />
                 </Switch>
             </div>

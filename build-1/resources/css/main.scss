@@ -1,0 +1,17 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+$webpack-color: rgb(145, 214, 249);
+$fontawesome-color: rgb(39, 157, 117);
+$bootstrap-color: rgb(129, 83, 204);
+$background-color: rgb(44, 59, 66);
+
+.home {
+  padding: 20px 20px 0px 20px;
+  background-color: rgba($color: $webpack-color, $alpha: 0.1);
+}
+
+.section {
+  border-radius: 10px;
+}
+
