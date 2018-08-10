@@ -20,12 +20,11 @@ class PostOrders extends Component {
               <thead>
                 <tr>
                   <th className="icon">
-                    <NavLink className="nav-link" to="/addEditOrder" title="Add New Stock to post">
+                    <NavLink className="nav-link orderActions" to="/addEditOrder" title="Add New Stock to post">
                       <FontAwesomeIcon icon="plus-square" />
                     </NavLink>
                   </th>
-                  <th>Push</th>
-                  <th>Chart</th>
+                  <th colSpan="2">Push Order</th>
                   <th>Company</th>
                   <th>Action</th>
                   <th>Method</th>
@@ -41,12 +40,12 @@ class PostOrders extends Component {
               </thead>
               <tbody>
                 <tr>
-                  <td className="icon"><a href="" title="Edit this stock"><FontAwesomeIcon icon="edit" /></a> <a href="" title="Delete this stock"><FontAwesomeIcon icon="trash-alt" /></a></td>
-                  <td className="icon"><a href="" title="Post my order to Zerodha"><img src="../resources/images/kite-logo.svg" className="externalWebsiteActionIcon" /></a>
-                    <a href="" title="Post my order to Upstox"><img src="../resources/images/upstox.png" className="externalWebsiteActionIcon" /></a></td>
+                  <td className="icon"><a href="" title="Edit this stock" className="orderActions"><FontAwesomeIcon icon="edit" /></a> <a href="" title="Delete this stock" className="orderActions"><FontAwesomeIcon icon="trash-alt" /></a></td>
                   <td className="icon">
-                    <a href="" title="Go to Zerodha Chart"><img src="../resources/images/kite-logo.svg" className="externalWebsiteActionIcon" /></a>
-                    <a href="" title="Go to Investing Chart"><img src="../resources/images/investing.png" className="externalWebsiteActionIcon" /></a>
+                    <a href="" title="Post my order to Zerodha"><img src="../resources/images/kite-logo.svg" className="externalWebsiteActionIcon" /></a>
+                  </td>
+                  <td className="icon">
+                    <a href="" title="Post my order to Upstox"><img src="../resources/images/upstox.png" className="externalWebsiteActionIcon" /></a>
                   </td>
                   <td>Canara Bank
                     <div className="cashStockName">Canbnk</div>
@@ -65,8 +64,14 @@ class PostOrders extends Component {
                 </tr>
 
               </tbody>
+              <tfoot>
+                <tr>
+                  <td colSpan="7"><button className="btn btn-sm btn-info" accessKey="u">Post All order to Upstox</button></td>
+                  <td colSpan="7"><button className="btn btn-success btn-sm" accessKey="k">Post All order to Zerodha</button></td>
+                </tr>
+              </tfoot>
             </table>
-            <button className="btn btn-primary btn-sm">Post All order to Upstox</button> <button className="btn btn-danger btn-sm">Post All order to Zerodha</button>
+
           </div>
         </div>
       </div>

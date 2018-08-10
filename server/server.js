@@ -2,14 +2,14 @@
 require('dotenv').config();
 
 var express = require('express'),
-  mongoose = require('mongoose')
-  // bodyParser = require("body-parser"),
-  // expressSantitzer = require("express-sanitizer"), // To Remoce Inject scripts
-  // methodOverride = require('method-override'), // To support Delete, Put request
-  // path = require('path'),
-  // webpack = require('webpack'),
-  // webpackMiddleware = require('webpack-dev-middleware'),
-  // webpackConfig = require('../webpack.config')
+  mongoose = require('mongoose'),
+  bodyParser = require("body-parser"),
+  expressSantitzer = require("express-sanitizer"), // To Remoce Inject scripts
+  methodOverride = require('method-override'), // To support Delete, Put request
+  path = require('path'),
+  webpack = require('webpack'),
+  webpackMiddleware = require('webpack-dev-middleware'),
+  webpackConfig = require('../webpack.config')
   ;
 
 
@@ -22,21 +22,6 @@ const mongoURL = process.env.MONGO_DATABASE_URL;
 //mongoos.Promise = require('bluebird');
 mongoose.Promise = global.Promise;
 
-mongoose.connect(mongoURL, {
-  socketTimeoutMS: 0,
-  keepAlive: true,
-  reconnectTries: 30
-})
-  .then(() => { console.log('connected'); })
-  .catch(err => console.error(err));
-
-var db = mongoose.connection;
-// mongodb error
-db.on('error', console.error.bind(console, 'connection error:'));
-// mongodb connection open
-db.once('open', () => {
-  console.log(`Connected to Mongo at: ${new Date()}`)
-});
 
 // app.use((req, res, next) => {
 //   if (mongoos.connection.readyState) {
@@ -50,12 +35,12 @@ db.once('open', () => {
 //     .catch(err => console.error(`Mongoose Error: ${err.stack}`));
 // });
 
-// app.use(webpackMiddleware(webpack(webpackConfig), {
-//   hot: true,
-//   colors: true,
-//   publicPath: '/',
-//   noInfo: true
-// }));
+app.use(webpackMiddleware(webpack(webpackConfig), {
+  hot: true,
+  colors: true,
+  publicPath: '/',
+  noInfo: true
+}));
 
 // Putting Some Pre-requisted Data.
 SeedDB();

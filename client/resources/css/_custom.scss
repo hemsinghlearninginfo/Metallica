@@ -157,7 +157,7 @@ a:hover {
     }
     tbody>tr>td {
         vertical-align: middle;
-        padding: 0.30rem;
+        padding: 0.20rem;
     }
     .icon {
         text-align: center;
@@ -186,6 +186,13 @@ a:hover {
     }
     .futureStockName::after {
         content: ' ]'
+    }
+    .orderActions{
+        color:red;
+    }
+    tfoot>tr>td {
+        text-align: center;
+        background-color: #f5f2f2;
     }
 }
 
