@@ -10,6 +10,7 @@ class StrategyDescription extends Component {
 
     constructor(props) {
         super(props);
+        console.log(this.props);
     }
 
     renderSwitch(param) {
@@ -18,7 +19,7 @@ class StrategyDescription extends Component {
             case 'MARUBOZU':
                 return <Strategy.Marubozu />;
             default:
-                return 'foo';
+                return <AllPages.Error404 />;
         }
     }
 

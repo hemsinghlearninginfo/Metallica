@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
+const user = require("./user");
 const strategy = require("./strategy");
 
 function seedDB() {
-    // Remove all users
-    console.log('seeding db');
+    user();
+    strategy();
 }
 
 module.exports = seedDB;

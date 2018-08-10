@@ -46,29 +46,25 @@ class Login extends Component {
                                 />
                             </div>
                             <div className="form-group">
-                                <FormGroup>
-                                    <Checkbox> Remember me</Checkbox>
-                                </FormGroup>
+                                <label className="checkbox-inline">
+                                    <input type="checkbox" value="rememberMe" />Remember Me
+                                </label>
                             </div>
                             <div className="form-group">
                                 <div className="row">
-                                    <div className="col-sm-4 col-md-4 col-lg-4">
-                                        <button className="btn btn-sm btn-primary" type="submit"><FontAwesomeIcon icon="sign-in-alt" /> Submit</button>
-                                    </div>
-                                    <div className="col-sm-8 col-md-8 col-lg-8">
-                                        <NavLink className="link" to="/forgotpassword"> Forgot password?</NavLink>
+                                    <div className="col-sm-12 col-md-12 col-lg-12">
+                                        <button className="btn btn-sm btn-primary button100" type="submit"><FontAwesomeIcon icon="sign-in-alt" /> Submit</button>
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col-sm-8 col-md-10 col-lg-10">
+                                    <div className="col-sm-8 col-md-8 col-lg-5">
+                                        <NavLink className="link" to="/forgotpassword"> Forgot password?</NavLink>
+                                    </div>
+                                    <div className="col-sm-8 col-md-10 col-lg-7">
                                         Not Register <NavLink className="link" to="/register">Create an account</NavLink>
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="form-group">
-                                <label for="formGroupExampleInput2">Another label</label>
-                                <input type="text" className="form-control" id="formGroupExampleInput2" placeholder="Another input" />
-                            </div> */}
                         </form>
                     </div>
                 </div>

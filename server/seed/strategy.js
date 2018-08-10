@@ -1,17 +1,12 @@
 const mongoose = require("mongoose");
-const strategyCategory = require("../model/strategy/strategy-category");
-const strategyDesciption = require("../model/strategy/strategy-description");
+const strategy = require("../model/strategy/index");
 
 var data = [
-    {
-        strategyCategory: "Basic",
-        description: "Basic market moves"
-    }
+    { strategy: "Marubozu"}
 ];
 
 function seedStrategyDB() {
-    // Remove all users
-    console.log('seeding db');
+    //console.log('seeding Strategy db');
 }
 
 module.exports = seedStrategyDB;

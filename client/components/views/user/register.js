@@ -16,15 +16,11 @@ class Register extends Component {
     render() {
         return (
             <div>
-                <div className="pageContent" id="frmRegister">
-                    <form>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-6">
-                                <h4>Register</h4>
-                            </div>
-                        </div>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-6">
+                <div className="pageContent frmUser frmUserWidth-Register container h-100">
+                    <div className="row h-100 justify-content-center align-items-center">
+                        <form className="col-12">
+                            <AllPages.UserScreenHeading name="Register" />
+                            <div className="form-group">
                                 <FieldGroup
                                     id="username"
                                     type="email"
@@ -34,9 +30,7 @@ class Register extends Component {
                                     help="type your registered email address"
                                 />
                             </div>
-                        </div>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-6">
+                            <div className="form-group">
                                 <FieldGroup
                                     id="password"
                                     type="password"
@@ -46,9 +40,7 @@ class Register extends Component {
                                     help="create your registered password"
                                 />
                             </div>
-                        </div>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-6">
+                            <div className="form-group">
                                 <FieldGroup
                                     id="passwordMatch"
                                     type="password"
@@ -58,44 +50,34 @@ class Register extends Component {
                                     help="re-type your password to confirm"
                                 />
                             </div>
-                        </div>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-3">
-                                <FieldGroup
-                                    id="firstName"
-                                    type="text"
-                                    label="First Name:"
-                                    required
-                                    placeholder="Enter your First Name"
-                                />
+                            <div className="d-flex flex-nowrap">
+                                <div className="order-1 p-2">
+                                    <FieldGroup
+                                        id="firstName"
+                                        type="text"
+                                        label="First Name:"
+                                        required
+                                        placeholder="Enter your First Name"
+                                    /></div>
+                                <div className="order-2 p-2">
+                                    <FieldGroup
+                                        id="lastName"
+                                        type="text"
+                                        label="Last Name:"
+                                        required
+                                        placeholder="Enter your Last Name"
+                                    /></div>
                             </div>
-                            <div className="col col-3">
-                                <FieldGroup
-                                    id="lastName"
-                                    type="text"
-                                    label="Last Name:"
-                                    required
-                                    placeholder="Enter your Last Name"
-                                />
-                            </div>
-                        </div>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-6">
+                            <div className="form-group">
                                 <FormGroup>
                                     <Checkbox> I agree to the <NavLink className="link" to="/termsofuser" target="_blank" >Terms of user</NavLink></Checkbox>
                                 </FormGroup>
                             </div>
-                        </div>
-                        <div className="row justify-content-md-center">
-                            <div className="col col-6">
-                                <div className="row">
-                                    <div className="col-sm-4 col-md-4 col-lg-4">
-                                        <button className="btn btn-sm btn-primary" type="submit"><FontAwesomeIcon icon="sign-in-alt" /> Submit</button>
-                                    </div>
-                                </div>
+                            <div className="form-group">
+                                <button className="btn btn-sm btn-primary" type="submit"><FontAwesomeIcon icon="sign-in-alt" /> Submit</button>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         );

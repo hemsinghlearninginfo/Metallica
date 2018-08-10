@@ -15,7 +15,6 @@ class Main extends Component {
             </div>
             <AllPages.Footer />
           </div>
-
         </HashRouter>
       </div>
     );

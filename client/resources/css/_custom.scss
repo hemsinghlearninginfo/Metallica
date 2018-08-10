@@ -36,6 +36,15 @@ nav {
     box-shadow: -1px -5px 8px 5px #8c8b8b;
 }
 
+.form-control{
+    padding: 0.175rem 0.65rem;
+    font-size: 0.8rem;
+}
+
+.p-2{
+    padding: 0.1rem !important;
+}
+
 .mainContainer {
     padding: 70px 20px 70px 20px;
 }
@@ -217,6 +226,7 @@ span.help-block {
     border-color: #36363814;
     border-width: 1px;
     border-radius: 5px;
+    background-color: #f7ffff;
 }
 
 .frmUserHeadings {
@@ -239,6 +249,10 @@ span.help-block {
     font-size: 10pt;
 }
 
+.button100{
+    width: 100%;
+}
+
 /* For mobile phones: */
 
 [class*="frmUserWidth-"] {
@@ -247,7 +261,7 @@ span.help-block {
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    .frmUserWidth-Login {
-        width: 40%;
+    .frmUserWidth-Login,.frmUserWidth-Register {
+        width: 30%;
     }
 }

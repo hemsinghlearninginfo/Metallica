@@ -17,7 +17,7 @@ class Home extends Component {
                         imageAtl="Candle"
                         url="/strategydetail/Marubozu"
                         heading="Marubozu"
-                        smalldescription="This candle is full of one dire"
+                        smalldescription="This candle is full of one side."
                     />
                     <AllPages.HomeCard
                         imagePath="../../clientResources/images/candleBasic.png"
@@ -38,7 +38,6 @@ class Home extends Component {
                         heading="Some quick example text to build on the card title and make up the bulk of the card's content."
                     />
                 </div>
-
             </div>
         )
     }
