@@ -1,0 +1,6 @@
+
+Give all 3rd party Authentication 
+https://github.com/sahat/hackathon-starter
+
+Starter Kit for Node and Mongoos
+https://github.com/yhagio/node-mongo-api-starter
